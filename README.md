@@ -24,7 +24,7 @@ Para Windows, Linux y macOS. Sin cuentas, sin internet y sin telemetría.
 > **¿Te sale una advertencia al abrirlo?** Es normal: la app es gratuita y aún no está firmada.
 > - **Windows:** «Más información» → «Ejecutar de todas formas».
 > - **macOS:** clic derecho sobre la app → «Abrir». Si dice que está dañada, ejecuta una vez en la Terminal: `xattr -cr "/Applications/Focus Timer.app"`
-> - **Linux (GNOME):** para ver el icono de la bandeja, instala la extensión «AppIndicator».
+> - **Linux:** funciona en cualquier escritorio (GNOME, KDE Plasma, XFCE, Cinnamon, MATE…). Solo GNOME no muestra el icono de la bandeja por defecto: instala la extensión «AppIndicator». En los demás aparece sin hacer nada.
 
 ---
 
