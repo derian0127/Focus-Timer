@@ -1,0 +1,23 @@
+[package]
+name = "focus-timer"
+description = "Temporizador de enfoque para Windows, Linux y macOS: pequeño, rápido y privado."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+focus-core = { path = "../crates/focus-core" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-autostart = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-single-instance = "2"
+
+# La ventana transparente en macOS exige la API privada (ver tauri.macos.conf.json).
+[target.'cfg(target_os = "macos")'.dependencies]
+tauri = { version = "2", features = ["tray-icon", "macos-private-api"] }

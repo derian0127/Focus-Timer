@@ -1,0 +1,9 @@
+{
+  "app": { "macOSPrivateApi": true },
+  "bundle": {
+    "targets": ["dmg", "app"],
+    "category": "Productivity",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns"],
+    "macOS": { "minimumSystemVersion": "10.15" }
+  }
+}

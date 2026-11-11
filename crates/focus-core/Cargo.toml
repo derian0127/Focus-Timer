@@ -1,0 +1,11 @@
+[package]
+name = "focus-core"
+description = "Lógica pura de Focus Timer: máquina de estados del temporizador y configuración. Sin dependencias de Tauri ni del sistema operativo."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

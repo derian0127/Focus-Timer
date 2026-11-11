@@ -1,0 +1,12 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Permisos mínimos de la ventana principal: escuchar eventos de la app y mover o cerrar su propia ventana (el modo widget lo aplica el backend). Sin acceso a archivos, red ni shell.",
+  "windows": ["main"],
+  "permissions": [
+    "core:event:allow-listen",
+    "core:event:allow-unlisten",
+    "core:window:allow-start-dragging",
+    "core:window:allow-close"
+  ]
+}

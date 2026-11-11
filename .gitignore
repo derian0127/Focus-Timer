@@ -1,0 +1,11 @@
+node_modules/
+dist/
+target/
+src-tauri/gen/
+*.log
+.DS_Store
+/.sync/
+release/
+Claude outputs/
+build-log.txt
+setup-report.json
